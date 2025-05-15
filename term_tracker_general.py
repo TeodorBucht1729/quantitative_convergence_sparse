@@ -1093,8 +1093,6 @@ def main():
 
     if big_eq_system_precomputed:
         solve_linear_equation_system_and_check_cancellation(ab_term_container.basis_terms, term_collection_vector, span_matrix, span_matrix_frac, term_collection_vector_frac, save_name_of_precomputed_frac_sol="big_eq_sol.in")
-
-    # reduce_using_type_0_term(term_collection, identities_la, ab_term_container.basis_terms, ab_term_container.term_to_ind)
     
 
 def generate_identity_using_off_diag_expansion(start_term, outer_factor_to_expand, factor_to_expand, total_degree_limit, q_degree_filter, degree_filter, switch_indices = False, print_out = False):
@@ -1316,7 +1314,7 @@ def build_span_matrix_and_save_it(term_collection: TermCollection, precomputed_i
             term_copy.coeff = CumulantPoly(cumulant_term, 1.0)
             new_basis_terms.append(term_copy)
             basis_terms_cumulant_factors.append(cumulant_term)
-            # print(new_basis_terms[-1], "basis term index", len(new_basis_terms)-1)
+            print(new_basis_terms[-1], "basis term index", len(new_basis_terms)-1)
 
     basis_terms = new_basis_terms
     nbr_basis_terms = len(basis_terms)
@@ -1327,12 +1325,16 @@ def build_span_matrix_and_save_it(term_collection: TermCollection, precomputed_i
     col_ind = []
     data = []
 
+    print("Coefficient matrix is of dimension", nbr_basis_terms, "x", len(identities_la))
+    print("Coefficient matrix:")
+
     percentage_finished = 0
     for j in range(len(identities_la)):
+        non_zero_elements = []
         new_percentage = math.floor(j/len(identities_la)*100)
         if new_percentage > percentage_finished:
             percentage_finished = new_percentage
-            print(new_percentage, "% finished building span_matrix")
+            # print(new_percentage, "% finished building span_matrix")
         for cumulant_term in occuring_cumulants:
             term_collection_copy = copy.deepcopy(identities_la[j])
             term_collection_copy.mult_with_constant(CumulantPoly(cumulant_term, 1.0))
@@ -1344,17 +1346,19 @@ def build_span_matrix_and_save_it(term_collection: TermCollection, precomputed_i
                 col_ind.append(j)
                 data.append(term.coeff.get_coeff_of_term(basis_terms_cumulant_factors[basis_term_ind]))
                 span_matrix_frac[basis_term_ind][j] = Fraction(int(term.coeff.get_coeff_of_term(basis_terms_cumulant_factors[basis_term_ind])))
+                non_zero_elements.append((basis_term_ind+1, span_matrix_frac[basis_term_ind][j]))
+                
+        non_zero_elements = sorted(non_zero_elements, key=lambda x: x[0])
+        non_zero_elements = [f"{x[0]}th entry: {str(x[1])}" for x in non_zero_elements]
+        print(f"{j+1}th column of coefficient matrix: {', '.join(non_zero_elements)}")
 
-    
     row_ind = np.array(row_ind)
     col_ind = np.array(col_ind)
     data = np.array(data)
     span_matrix = coo_matrix((data, (row_ind, col_ind)), shape=(nbr_basis_terms, len(identities_la)))
 
     
-    print("Span matrix is of dimension", nbr_basis_terms, "x", len(identities_la))
-    print("Span matrix:\n", span_matrix)
-
+    non_zero_elements = []
     term_collection_vector = np.zeros(nbr_basis_terms, dtype = float)
     term_collection_vector_frac = np.zeros(nbr_basis_terms, dtype = object)
     for term_key in term_collection.terms:
@@ -1363,11 +1367,15 @@ def build_span_matrix_and_save_it(term_collection: TermCollection, precomputed_i
 
         term_collection_vector[basis_term_ind] = float(int(term.coeff.get_coeff_of_term(basis_terms_cumulant_factors[basis_term_ind])))
         term_collection_vector_frac[basis_term_ind] = Fraction(int(term.coeff.get_coeff_of_term(basis_terms_cumulant_factors[basis_term_ind])))
+        non_zero_elements.append((basis_term_ind+1, term_collection_vector_frac[basis_term_ind]))
     
     # print("Term collection:")
     # term_collection.print_terms_in_order()
     
-    print("Term collection vector, i.e. rhs of linear equation\n", term_collection_vector)
+    print("Rhs of linear equation (denoted (b_T)_{T \in \Tau_b} in the article):")
+    non_zero_elements = sorted(non_zero_elements, key=lambda x: x[0])
+    non_zero_elements = [f"{x[0]}th entry: {str(x[1])}" for x in non_zero_elements]
+    print(f"d/dt E[F(X(t))] on vector form: {', '.join(non_zero_elements)}")
 
     save_coo_format(nbr_basis_terms, len(identities_la), row_ind, col_ind, data, term_collection_vector)
 
@@ -1421,7 +1429,15 @@ def solve_linear_equation_system_and_check_cancellation(basis_terms, term_collec
             if np.abs(remainder[i]) != Fraction(0, 1):
                 print("Basis term", basis_terms[i], basis_terms[i].get_key(), "\nnot reduced, remaining entry:", remainder[i])
 
+    non_zero_elements = []
+    for i in range(x_frac.shape[0]):
+        if x_frac[i] != 0:
+            non_zero_elements.append((i+1, x_frac[i]))
     
+    non_zero_elements = sorted(non_zero_elements, key=lambda x: x[0])
+    non_zero_elements = [f"{x[0]}th entry: {str(x[1])}" for x in non_zero_elements]
+    print(f"Solution to linear equation system: {', '.join(non_zero_elements)}")
+
     for c in range(span_matrix.shape[1]):
         if x_frac[c] != Fraction(0, 1):
             print("\n\nUsed identity:")

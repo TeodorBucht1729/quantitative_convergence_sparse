@@ -133,6 +133,7 @@ Basis terms (Denoted \Tau_b in the article):
 Coefficient matrix (denoted (\widetilde{c}_{T \beta})_{T \in \Tau_g, 1 \leq \beta \leq M} in the article):
 Coefficient matrix is of dimension 110 x 138
 
+
 1th column of coefficient matrix: 79th entry: -2, 86th entry: -1, 90th entry: -1, 92th entry: -1, 96th entry: -1
 2th column of coefficient matrix: 84th entry: -1, 89th entry: -1, 95th entry: -1/2, 96th entry: -5/2, 97th entry: -1
 3th column of coefficient matrix: 6th entry: -1, 10th entry: -5/2, 11th entry: -1, 13th entry: -1/2, 15th entry: -1/2, 44th entry: -1/2
