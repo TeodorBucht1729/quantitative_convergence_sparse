@@ -1,0 +1,1103 @@
+
+
+Expansion of d/dt E[m(t, z(t))]:
+
+12 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N^1}{q^2N^3} \sum_{a,b,v} \EX \left[G_{aa}^2G_{bb}G_{bv}^2 \right] \\ 
+& +12 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N^1}{q^2N^2} \sum_{a,b} \EX \left[G_{ab}^2 \right] \\ 
+& +36 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N^1}{q^2N^3} \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bv} \right] \\ 
+& +48 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N^1}{q^2N^4} \sum_{a,b,v,j} \EX \left[G_{aa}G_{bv}G_{bj}G_{vj} \right] \\ 
+& +24 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N^1}{q^2N^3} \sum_{a,b,v} \EX \left[G_{ab}G_{av}G_{bv} \right] \\ 
+& +36 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N^1}{q^2N^3} \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^2G_{bv}^2 \right] \\ 
+& +72 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N^1}{q^2N^4} \sum_{a,b,v,j} \EX \left[G_{ab}G_{aj}G_{bv}G_{vj} \right] \\ 
+& +24 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N^1}{q^2N^4} \sum_{a,b,v,j} \EX \left[G_{aj}^2G_{bv}^2 \right] \\ 
+& +12 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N^1}{q^2N^3} \sum_{a,b,v} \EX \left[G_{ab}^3G_{av}G_{bv} \right]
+
+
+
+Basis terms (Denoted \Tau_b in the article):
+
+
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}^{2}G_{vj}G_{je}\right] basis term index 0
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}^{2}G_{vv}G_{je}^{2}\right] basis term index 1
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}^{2}G_{vj}G_{ve}G_{je}\right] basis term index 2
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}^{2}G_{vj}^{2}\right] basis term index 3
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}^{2}G_{bb}G_{bv}^{2}\right] basis term index 4
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bv}\right] basis term index 5
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bv}^{2}\right] basis term index 6
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}\right] basis term index 7
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{aa}G_{ab}^{2}G_{bb}\right] basis term index 8
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{jj}\right] basis term index 11
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vj}^{2}\right] basis term index 12
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{bj}^{2}G_{vv}\right] basis term index 13
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vj}G_{ve}G_{je}\right] basis term index 18
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{jj}G_{ee}\right] basis term index 19
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{je}^{2}\right] basis term index 20
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{be}^{2}G_{vv}G_{jj}\right] basis term index 21
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vv}G_{jj}\right] basis term index 22
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vv}G_{jj}\right] basis term index 23
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{be}^{2}G_{vj}^{2}\right] basis term index 24
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vj}^{2}\right] basis term index 25
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vj}^{2}\right] basis term index 26
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{3}G_{av}G_{bv}\right] basis term index 29
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{4}G_{vv}\right] basis term index 30
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{ab}^{4}\right] basis term index 31
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{av}G_{bj}G_{vj}\right] basis term index 32
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{4}G_{vv}G_{jj}\right] basis term index 33
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{4}G_{vj}^{2}\right] basis term index 34
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{aj}G_{bj}G_{vv}\right] basis term index 35
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{aj}G_{be}G_{vv}G_{je}\right] basis term index 36
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{4}G_{vj}G_{ve}G_{je}\right] basis term index 37
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{4}G_{vv}G_{jj}G_{ee}\right] basis term index 38
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{4}G_{vv}G_{je}^{2}\right] basis term index 39
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{ae}G_{be}G_{vv}G_{jj}\right] basis term index 40
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{ae}G_{be}G_{vj}^{2}\right] basis term index 41
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{bj}G_{vj}\right] basis term index 43
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{bj}\right] basis term index 44
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{bj}^{2}\right] basis term index 45
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{aj}G_{ae}G_{bb}G_{bv}^{2}G_{je}\right] basis term index 46
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{bj}G_{be}G_{je}\right] basis term index 47
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{be}G_{ve}G_{jj}\right] basis term index 48
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}G_{bv}G_{be}G_{jj}\right] basis term index 49
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{be}^{2}G_{jj}\right] basis term index 50
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{aj}^{2}G_{bb}G_{bv}^{2}\right] basis term index 52
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{aj}^{2}G_{bv}^{2}\right] basis term index 53
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{bj}\right] basis term index 54
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ae}^{2}G_{bb}G_{bv}^{2}G_{jj}\right] basis term index 58
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{ae}^{2}G_{bv}^{2}G_{jj}\right] basis term index 59
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bv}G_{be}G_{jj}\right] basis term index 60
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bv}G_{bj}^{2}G_{be}\right] basis term index 64
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}^{2}G_{bj}^{2}G_{be}^{2}\right] basis term index 65
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}^{2}G_{ae}G_{bj}^{2}G_{be}\right] basis term index 66
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bv}G_{bj}G_{be}\right] basis term index 67
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 68
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bv}G_{be}G_{vj}G_{je}\right] basis term index 69
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{vv}G_{je}^{2}\right] basis term index 70
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{vj}G_{ve}G_{je}\right] basis term index 71
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{vj}^{2}\right] basis term index 72
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}G_{vj}\right] basis term index 73
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bv}G_{bj}G_{vj}\right] basis term index 74
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}^{2}G_{bv}^{2}\right] basis term index 75
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 76
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{je}^{2}\right] basis term index 77
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bj}G_{vj}G_{ve}\right] basis term index 78
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bv}\right] basis term index 79
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{vv}\right] basis term index 80
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{aa}G_{ab}^{2}\right] basis term index 81
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{2}G_{av}^{2}\right] basis term index 82
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{vj}\right] basis term index 83
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{vv}G_{jj}\right] basis term index 84
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{vj}^{2}\right] basis term index 85
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bj}G_{vv}\right] basis term index 86
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{aj}^{2}G_{vv}\right] basis term index 87
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{vv}G_{je}\right] basis term index 88
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{vj}G_{ve}G_{je}\right] basis term index 89
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{vv}G_{jj}G_{ee}\right] basis term index 90
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{vv}G_{je}^{2}\right] basis term index 91
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{be}G_{vv}G_{jj}\right] basis term index 92
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{ae}^{2}G_{vv}G_{jj}\right] basis term index 93
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{ae}^{2}G_{vj}^{2}\right] basis term index 94
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{vj}G_{je}\right] basis term index 95
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bv}G_{je}\right] basis term index 96
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 97
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{bb}G_{vv}G_{je}^{2}\right] basis term index 98
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{bb}G_{vj}G_{ve}G_{je}\right] basis term index 99
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{bb}G_{vj}^{2}\right] basis term index 100
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}G_{aj}G_{bv}G_{vj}\right] basis term index 101
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{bv}G_{bj}G_{vj}\right] basis term index 102
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{bv}^{2}\right] basis term index 103
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 104
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{bv}^{2}G_{je}^{2}\right] basis term index 105
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{ae}G_{bj}G_{vj}G_{ve}\right] basis term index 106
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}G_{av}G_{bv}\right] basis term index 107
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{ab}^{2}\right] basis term index 108
+1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aj}^{2}G_{bv}^{2}\right] basis term index 109
+
+
+
+Coefficient matrix (denoted (\widetilde{c}_{T \beta})_{T \in \Tau_g, 1 \leq \beta \leq M} in the article):
+Coefficient matrix is of dimension 110 x 138
+
+1th column of coefficient matrix: 79th entry: -2, 86th entry: -1, 90th entry: -1, 92th entry: -1, 96th entry: -1
+2th column of coefficient matrix: 84th entry: -1, 89th entry: -1, 95th entry: -1/2, 96th entry: -5/2, 97th entry: -1
+3th column of coefficient matrix: 6th entry: -1, 10th entry: -5/2, 11th entry: -1, 13th entry: -1/2, 15th entry: -1/2, 44th entry: -1/2
+4th column of coefficient matrix: 8th entry: -1, 12th entry: -2, 17th entry: -4, 18th entry: -4, 19th entry: -2, 20th entry: -1, 21th entry: -1
+5th column of coefficient matrix: 5th entry: -2, 14th entry: -1, 44th entry: -2, 46th entry: -3, 52th entry: -4, 76th entry: -1
+6th column of coefficient matrix: 76th entry: -1/2, 80th entry: -2, 81th entry: -1/2, 82th entry: -1
+7th column of coefficient matrix: 105th entry: -1, 106th entry: -1, 107th entry: -2, 110th entry: -1
+8th column of coefficient matrix: 72th entry: -1, 75th entry: -2, 79th entry: -6, 90th entry: -3, 103th entry: -1
+9th column of coefficient matrix: 18th entry: -3/2, 36th entry: -1, 37th entry: -5/2, 40th entry: -1/2, 41th entry: -1/2, 43th entry: -1
+10th column of coefficient matrix: 12th entry: -2, 18th entry: -4, 20th entry: -1, 23th entry: -2, 24th entry: -3, 41th entry: -2, 85th entry: -1
+11th column of coefficient matrix: 101th entry: -1, 102th entry: -4, 104th entry: -2, 109th entry: -1, 110th entry: -1
+12th column of coefficient matrix: 6th entry: -1, 10th entry: -1/2, 15th entry: -1/2, 44th entry: -1/2, 45th entry: -2, 52th entry: -1, 53th entry: -1/2
+13th column of coefficient matrix: 69th entry: -4, 81th entry: -1, 85th entry: -2, 89th entry: -2, 90th entry: -2, 91th entry: -1, 92th entry: -1
+14th column of coefficient matrix: 4th entry: -1/2, 5th entry: -1, 10th entry: -2, 14th entry: -1/2, 44th entry: -2
+15th column of coefficient matrix: 11th entry: -1, 18th entry: -1/2, 28th entry: -1, 47th entry: -1/2, 56th entry: -1, 57th entry: -1, 64th entry: -2
+16th column of coefficient matrix: 7th entry: -1, 11th entry: -1, 16th entry: -1, 52th entry: -2, 55th entry: -1
+17th column of coefficient matrix: 83th entry: -1, 88th entry: -2, 94th entry: -1, 95th entry: -1, 96th entry: -8
+18th column of coefficient matrix: 11th entry: -1/2, 30th entry: -1, 33th entry: -1/2, 36th entry: -1/2, 52th entry: -1, 54th entry: -1/2, 55th entry: -2
+19th column of coefficient matrix: 30th entry: -1, 36th entry: -2, 41th entry: -1, 42th entry: -1, 43th entry: -4, 62th entry: -6
+20th column of coefficient matrix: 104th entry: -1, 108th entry: -1, 109th entry: -1
+21th column of coefficient matrix: 8th entry: -2, 11th entry: -2, 12th entry: -1, 15th entry: -2, 16th entry: -3, 36th entry: -2, 81th entry: -1
+22th column of coefficient matrix: 1th entry: -1/2, 10th entry: -1, 17th entry: -1/2, 19th entry: -1/2, 26th entry: -1/2, 28th entry: -3, 29th entry: -1
+23th column of coefficient matrix: 98th entry: -4, 99th entry: -1, 101th entry: -2, 104th entry: -1, 105th entry: -2, 106th entry: -1
+24th column of coefficient matrix: 69th entry: -1, 74th entry: -1, 77th entry: -1/2, 79th entry: -2, 90th entry: -1/2, 96th entry: -1
+25th column of coefficient matrix: 15th entry: -2, 17th entry: -1, 18th entry: -1, 23th entry: -1, 50th entry: -1, 58th entry: -4, 61th entry: -2, 64th entry: -2, 87th entry: -1
+26th column of coefficient matrix: 8th entry: -1, 10th entry: -1, 12th entry: -1/2, 14th entry: -1/2, 15th entry: -2, 16th entry: -1
+27th column of coefficient matrix: 11th entry: -3/2, 30th entry: -1, 33th entry: -5/2, 35th entry: -1/2, 36th entry: -1/2
+28th column of coefficient matrix: 1th entry: -2, 44th entry: -2, 48th entry: -5, 49th entry: -1, 64th entry: -4, 75th entry: -1
+29th column of coefficient matrix: 6th entry: -2, 10th entry: -1, 11th entry: -1, 15th entry: -1, 45th entry: -1, 52th entry: -4, 55th entry: -2, 80th entry: -1
+30th column of coefficient matrix: 13th entry: -1, 19th entry: -1, 21th entry: -1, 28th entry: -2, 29th entry: -2
+31th column of coefficient matrix: 12th entry: -1, 17th entry: -2, 20th entry: -1/2, 22th entry: -1/2, 23th entry: -2, 24th entry: -1
+32th column of coefficient matrix: 7th entry: -2, 16th entry: -1, 33th entry: -2, 52th entry: -2, 54th entry: -3, 55th entry: -2, 83th entry: -1
+33th column of coefficient matrix: 69th entry: -2, 70th entry: -1, 71th entry: -1, 72th entry: -1, 73th entry: -1
+34th column of coefficient matrix: 7th entry: -1, 10th entry: -1, 11th entry: -2, 13th entry: -1/2, 16th entry: -1/2, 33th entry: -1
+35th column of coefficient matrix: 102th entry: -3/2, 103th entry: -1, 108th entry: -1, 110th entry: -1/2
+36th column of coefficient matrix: 33th entry: -1, 37th entry: -1, 42th entry: -1/2, 43th entry: -3/2, 57th entry: -3/2, 62th entry: -3/2
+37th column of coefficient matrix: 30th entry: -1, 33th entry: -1, 36th entry: -1, 54th entry: -3/2, 55th entry: -3/2
+38th column of coefficient matrix: 98th entry: -2, 99th entry: -1, 100th entry: -1, 101th entry: -1
+39th column of coefficient matrix: 36th entry: -1, 37th entry: -1, 41th entry: -1, 43th entry: -1, 60th entry: -3/2, 61th entry: -3/2
+40th column of coefficient matrix: 29th entry: -1/2, 42th entry: -1/2, 43th entry: -1/2, 55th entry: -1, 57th entry: -1/2, 61th entry: -1/2, 62th entry: -5/2, 64th entry: -1
+41th column of coefficient matrix: 74th entry: -1, 81th entry: -1, 85th entry: -1, 87th entry: -1, 88th entry: -1
+42th column of coefficient matrix: 1th entry: -1, 14th entry: -1, 22th entry: -1, 49th entry: -1, 50th entry: -2, 51th entry: -1
+43th column of coefficient matrix: 45th entry: -1, 47th entry: -1, 50th entry: -1, 63th entry: -2, 65th entry: -2
+44th column of coefficient matrix: 5th entry: -1/2, 6th entry: -2, 7th entry: -1, 8th entry: -1/2, 9th entry: -1
+45th column of coefficient matrix: 69th entry: -2, 71th entry: -1/2, 85th entry: -1, 91th entry: -1/2, 93th entry: -2
+46th column of coefficient matrix: 15th entry: -1, 17th entry: -1, 23th entry: -1, 28th entry: -1, 50th entry: -1/2, 58th entry: -2, 59th entry: -1/2
+47th column of coefficient matrix: 27th entry: -1/2, 28th entry: -1, 47th entry: -1/2, 52th entry: -1, 56th entry: -5/2, 57th entry: -1, 58th entry: -1/2
+48th column of coefficient matrix: 7th entry: -1, 11th entry: -1, 16th entry: -1/2, 46th entry: -1/2, 52th entry: -3
+49th column of coefficient matrix: 27th entry: -3/2, 35th entry: -1, 40th entry: -1/2, 42th entry: -2, 43th entry: -2
+50th column of coefficient matrix: 25th entry: -1/2, 28th entry: -1, 47th entry: -2, 53th entry: -1, 56th entry: -1, 59th entry: -1/2, 63th entry: -1
+51th column of coefficient matrix: 26th entry: -1/2, 28th entry: -1/2, 29th entry: -1/2, 52th entry: -1, 56th entry: -1/2, 58th entry: -1/2, 62th entry: -1, 63th entry: -1/2, 64th entry: -2
+52th column of coefficient matrix: 69th entry: -1, 74th entry: -2, 79th entry: -2, 96th entry: -5, 97th entry: -2, 102th entry: -1
+53th column of coefficient matrix: 10th entry: -2, 17th entry: -1, 28th entry: -1, 29th entry: -1, 56th entry: -4, 62th entry: -2, 63th entry: -1, 64th entry: -2, 74th entry: -1
+54th column of coefficient matrix: 80th entry: -2, 81th entry: -1, 82th entry: -2, 83th entry: -3, 109th entry: -1
+55th column of coefficient matrix: 1th entry: -3/2, 25th entry: -1/2, 44th entry: -1, 48th entry: -1, 49th entry: -1, 63th entry: -2
+56th column of coefficient matrix: 11th entry: -1, 18th entry: -1, 27th entry: -1/2, 29th entry: -3/2, 56th entry: -1, 62th entry: -1, 64th entry: -1
+57th column of coefficient matrix: 11th entry: -1, 18th entry: -1/2, 29th entry: -1, 48th entry: -1/2, 56th entry: -1, 64th entry: -3
+58th column of coefficient matrix: 7th entry: -3/2, 30th entry: -2, 31th entry: -1/2, 32th entry: -1
+59th column of coefficient matrix: 1th entry: -1, 2th entry: -1/2, 14th entry: -1, 17th entry: -2, 22th entry: -1/2, 49th entry: -2
+60th column of coefficient matrix: 15th entry: -1, 17th entry: -1/2, 23th entry: -1/2, 49th entry: -1/2, 50th entry: -2, 58th entry: -1, 59th entry: -1/2, 63th entry: -1
+61th column of coefficient matrix: 74th entry: -3/2, 80th entry: -1, 84th entry: -1, 86th entry: -1/2, 87th entry: -1
+62th column of coefficient matrix: 69th entry: -2, 85th entry: -1, 91th entry: -1, 93th entry: -1, 94th entry: -1
+63th column of coefficient matrix: 1th entry: -4, 5th entry: -1, 14th entry: -2, 22th entry: -1, 25th entry: -1, 47th entry: -4, 48th entry: -2
+64th column of coefficient matrix: 69th entry: -2, 87th entry: -2, 89th entry: -5, 93th entry: -1, 97th entry: -2, 103th entry: -1
+65th column of coefficient matrix: 10th entry: -1, 17th entry: -1, 26th entry: -1/2, 28th entry: -3/2, 47th entry: -1/2, 56th entry: -1, 63th entry: -1/2, 64th entry: -1
+66th column of coefficient matrix: 46th entry: -1, 48th entry: -3, 51th entry: -1, 65th entry: -2
+67th column of coefficient matrix: 7th entry: -1, 10th entry: -1, 16th entry: -1/2, 52th entry: -2, 53th entry: -1/2, 54th entry: -1
+68th column of coefficient matrix: 52th entry: -1, 56th entry: -1, 58th entry: -1, 64th entry: -2, 65th entry: -1, 68th entry: -1
+69th column of coefficient matrix: 100th entry: -1, 103th entry: -2, 105th entry: -1, 107th entry: -6, 108th entry: -1
+70th column of coefficient matrix: 31th entry: -1, 34th entry: -2, 37th entry: -8, 38th entry: -2, 39th entry: -1, 40th entry: -1
+71th column of coefficient matrix: 16th entry: -3/2, 31th entry: -1, 33th entry: -1, 34th entry: -1/2, 36th entry: -2
+72th column of coefficient matrix: 77th entry: -2, 78th entry: -1/2, 79th entry: -2, 86th entry: -1, 92th entry: -1/2
+73th column of coefficient matrix: 1th entry: -1, 25th entry: -1/2, 46th entry: -1, 48th entry: -2, 51th entry: -1/2, 56th entry: -2
+74th column of coefficient matrix: 16th entry: -2, 24th entry: -1, 37th entry: -2, 57th entry: -2, 58th entry: -2, 60th entry: -3, 61th entry: -2, 88th entry: -1
+75th column of coefficient matrix: 83th entry: -1, 84th entry: -3, 88th entry: -1
+76th column of coefficient matrix: 1th entry: -4, 2th entry: -1, 3th entry: -1, 4th entry: -1
+77th column of coefficient matrix: 74th entry: -4, 81th entry: -2, 82th entry: -1, 84th entry: -2, 85th entry: -1, 86th entry: -1
+78th column of coefficient matrix: 73th entry: -1, 74th entry: -4, 76th entry: -2, 86th entry: -3, 104th entry: -1
+79th column of coefficient matrix: 48th entry: -1/2, 52th entry: -1, 56th entry: -1/2, 58th entry: -1/2, 64th entry: -1, 65th entry: -3, 66th entry: -1/2
+80th column of coefficient matrix: 35th entry: -1, 38th entry: -1, 40th entry: -1, 43th entry: -4
+81th column of coefficient matrix: 1th entry: -1/2, 26th entry: -1/2, 28th entry: -1/2, 45th entry: -1, 47th entry: -1/2, 50th entry: -1/2, 63th entry: -5/2, 64th entry: -1
+82th column of coefficient matrix: 15th entry: -1, 17th entry: -5/2, 18th entry: -1, 21th entry: -1/2, 23th entry: -1/2, 28th entry: -1, 49th entry: -1/2
+83th column of coefficient matrix: 77th entry: -1, 79th entry: -6, 80th entry: -1, 87th entry: -2, 93th entry: -1, 97th entry: -2
+84th column of coefficient matrix: 77th entry: -2, 86th entry: -2, 92th entry: -1, 95th entry: -3, 96th entry: -4, 110th entry: -1
+85th column of coefficient matrix: 79th entry: -1, 84th entry: -1, 89th entry: -1/2, 90th entry: -1/2, 95th entry: -1/2, 96th entry: -5/2
+86th column of coefficient matrix: 69th entry: -1/2, 70th entry: -1/2, 74th entry: -1, 77th entry: -1/2, 79th entry: -3, 90th entry: -1/2
+87th column of coefficient matrix: 6th entry: -2, 7th entry: -3, 8th entry: -1, 9th entry: -2, 30th entry: -2, 82th entry: -1
+88th column of coefficient matrix: 11th entry: -2, 18th entry: -1, 43th entry: -2, 57th entry: -3, 62th entry: -4, 64th entry: -2, 84th entry: -1
+89th column of coefficient matrix: 98th entry: -3/2, 100th entry: -1, 103th entry: -1, 106th entry: -1/2, 107th entry: -1
+90th column of coefficient matrix: 16th entry: -1, 18th entry: -1, 24th entry: -1, 29th entry: -1, 58th entry: -2, 61th entry: -1
+91th column of coefficient matrix: 8th entry: -2, 9th entry: -1, 10th entry: -4, 11th entry: -4, 12th entry: -1, 13th entry: -1
+92th column of coefficient matrix: 7th entry: -1, 16th entry: -2, 24th entry: -1, 27th entry: -1, 29th entry: -4, 56th entry: -4, 57th entry: -2
+93th column of coefficient matrix: 16th entry: -1, 17th entry: -1, 18th entry: -2, 21th entry: -1/2, 24th entry: -1/2, 29th entry: -1, 37th entry: -1
+94th column of coefficient matrix: 31th entry: -2, 32th entry: -1, 33th entry: -8, 34th entry: -1, 35th entry: -1
+95th column of coefficient matrix: 16th entry: -1, 17th entry: -1, 24th entry: -1/2, 56th entry: -1, 58th entry: -2, 59th entry: -1/2, 60th entry: -1
+96th column of coefficient matrix: 5th entry: -1, 14th entry: -1, 44th entry: -1, 45th entry: -2, 46th entry: -1
+97th column of coefficient matrix: 54th entry: -1, 57th entry: -1, 60th entry: -1, 62th entry: -2, 67th entry: -2
+98th column of coefficient matrix: 52th entry: -1, 56th entry: -2, 58th entry: -1, 64th entry: -1, 65th entry: -1/2, 66th entry: -1/2, 67th entry: -1
+99th column of coefficient matrix: 77th entry: -1/2, 79th entry: -1, 84th entry: -1, 89th entry: -1/2, 96th entry: -1, 97th entry: -2
+100th column of coefficient matrix: 101th entry: -1, 102th entry: -1, 103th entry: -1, 104th entry: -1
+101th column of coefficient matrix: 29th entry: -1/2, 33th entry: -1, 37th entry: -1/2, 43th entry: -1/2, 56th entry: -1, 57th entry: -1, 62th entry: -5/2
+102th column of coefficient matrix: 47th entry: -1, 53th entry: -1, 59th entry: -1, 63th entry: -2, 65th entry: -1, 66th entry: -1
+103th column of coefficient matrix: 1th entry: -4, 2th entry: -1, 4th entry: -2, 25th entry: -3, 26th entry: -4, 73th entry: -1
+104th column of coefficient matrix: 84th entry: -1, 89th entry: -1, 96th entry: -2, 97th entry: -2
+105th column of coefficient matrix: 69th entry: -1, 74th entry: -1, 77th entry: -1, 79th entry: -2, 97th entry: -1
+106th column of coefficient matrix: 1th entry: -1/2, 10th entry: -1, 17th entry: -1/2, 28th entry: -1/2, 47th entry: -1, 56th entry: -1, 63th entry: -5/2
+107th column of coefficient matrix: 55th entry: -1, 61th entry: -1/2, 62th entry: -1, 64th entry: -1, 65th entry: -1/2, 67th entry: -1, 68th entry: -2
+108th column of coefficient matrix: 16th entry: -1, 18th entry: -1, 24th entry: -1/2, 51th entry: -1/2, 56th entry: -1, 58th entry: -3
+109th column of coefficient matrix: 13th entry: -2, 21th entry: -1, 26th entry: -2, 27th entry: -3, 29th entry: -4, 42th entry: -2, 86th entry: -1
+110th column of coefficient matrix: 1th entry: -5/2, 3th entry: -1/2, 25th entry: -1/2, 28th entry: -2, 44th entry: -1, 49th entry: -1/2
+111th column of coefficient matrix: 69th entry: -5/2, 72th entry: -1/2, 79th entry: -1, 87th entry: -1, 92th entry: -1/2, 93th entry: -1/2
+112th column of coefficient matrix: 73th entry: -1, 74th entry: -2, 75th entry: -1, 76th entry: -1
+113th column of coefficient matrix: 77th entry: -1, 79th entry: -2, 86th entry: -1, 92th entry: -1, 95th entry: -1
+114th column of coefficient matrix: 27th entry: -1/2, 43th entry: -1, 54th entry: -1, 56th entry: -1, 57th entry: -2, 60th entry: -1/2, 62th entry: -1
+115th column of coefficient matrix: 74th entry: -1, 83th entry: -1, 84th entry: -2, 86th entry: -1/2, 88th entry: -1/2
+116th column of coefficient matrix: 24th entry: -3/2, 34th entry: -1, 37th entry: -2, 39th entry: -1/2, 41th entry: -2
+117th column of coefficient matrix: 98th entry: -1, 102th entry: -1, 105th entry: -1, 107th entry: -2
+118th column of coefficient matrix: 81th entry: -2, 84th entry: -2, 85th entry: -1, 87th entry: -2, 88th entry: -3, 104th entry: -1
+119th column of coefficient matrix: 13th entry: -1, 21th entry: -1/2, 25th entry: -1/2, 26th entry: -2, 27th entry: -1, 28th entry: -2
+120th column of coefficient matrix: 74th entry: -5/2, 75th entry: -1/2, 80th entry: -1, 86th entry: -1/2, 87th entry: -1/2
+121th column of coefficient matrix: 6th entry: -1, 10th entry: -1, 15th entry: -1, 45th entry: -1/2, 52th entry: -2, 53th entry: -1/2
+122th column of coefficient matrix: 6th entry: -1, 15th entry: -2, 23th entry: -1, 26th entry: -1, 28th entry: -4, 63th entry: -2, 64th entry: -4
+123th column of coefficient matrix: 18th entry: -1/2, 36th entry: -1, 37th entry: -1/2, 41th entry: -1/2, 58th entry: -1, 60th entry: -1/2, 61th entry: -2, 62th entry: -1
+124th column of coefficient matrix: 69th entry: -3/2, 79th entry: -1, 87th entry: -1, 89th entry: -1, 92th entry: -1/2, 93th entry: -1
+125th column of coefficient matrix: 88th entry: -1, 89th entry: -3, 94th entry: -1, 96th entry: -1
+126th column of coefficient matrix: 74th entry: -2, 80th entry: -2, 84th entry: -5, 87th entry: -1, 108th entry: -1
+127th column of coefficient matrix: 69th entry: -4, 71th entry: -1, 73th entry: -2, 77th entry: -2, 92th entry: -3, 101th entry: -1
+128th column of coefficient matrix: 55th entry: -1, 57th entry: -1, 61th entry: -1, 62th entry: -2, 67th entry: -1, 68th entry: -1
+129th column of coefficient matrix: 11th entry: -1, 18th entry: -1/2, 19th entry: -1/2, 27th entry: -1/2, 28th entry: -1, 29th entry: -5/2, 43th entry: -1
+130th column of coefficient matrix: 29th entry: -3/2, 33th entry: -1, 37th entry: -1/2, 38th entry: -1/2, 42th entry: -1/2, 43th entry: -3
+131th column of coefficient matrix: 73th entry: -1/2, 74th entry: -1, 81th entry: -1, 85th entry: -1/2, 87th entry: -2
+132th column of coefficient matrix: 70th entry: -4, 71th entry: -1, 73th entry: -2, 76th entry: -1, 77th entry: -4, 78th entry: -1
+133th column of coefficient matrix: 27th entry: -1/2, 29th entry: -1, 48th entry: -1/2, 52th entry: -1, 56th entry: -5/2, 58th entry: -1/2, 64th entry: -1
+134th column of coefficient matrix: 54th entry: -1, 56th entry: -1, 57th entry: -1, 60th entry: -1/2, 66th entry: -1/2, 67th entry: -3
+135th column of coefficient matrix: 70th entry: -3/2, 72th entry: -1, 75th entry: -1, 78th entry: -1/2, 79th entry: -2
+136th column of coefficient matrix: 47th entry: -1/2, 52th entry: -1, 56th entry: -1/2, 58th entry: -1/2, 63th entry: -1, 65th entry: -2, 66th entry: -1/2, 67th entry: -1
+137th column of coefficient matrix: 69th entry: -1, 88th entry: -1, 89th entry: -2, 92th entry: -1/2, 94th entry: -1/2, 96th entry: -1
+138th column of coefficient matrix: 80th entry: -1, 81th entry: -1, 82th entry: -1, 83th entry: -1
+
+Rhs of linear equation system (denoted (b_T)_{T \in \Tau_b} in the article): 5th entry: 12, 6th entry: 36, 7th entry: 36, 30th entry: 12, 102th entry: 72, 103th entry: 48, 108th entry: 24, 109th entry: 12, 110th entry: 24
+
+Solution to linear equation system (denoted (x_\beta)_{1 \leq \beta \leq M} in the article): 3th entry: -1824, 4th entry: -12, 9th entry: -744, 12th entry: 672, 15th entry: 1968, 16th entry: -1056, 18th entry: 672, 19th entry: -60, 21th entry: 60, 22th entry: 120, 26th entry: -72, 27th entry: -1488, 29th entry: 48, 31th entry: 24, 34th entry: 1872, 35th entry: -48, 36th entry: -96, 37th entry: 720, 39th entry: 432, 40th entry: -2760, 41th entry: 48, 42th entry: -12, 43th entry: 1512, 44th entry: -120, 46th entry: 504, 47th entry: -1992, 48th entry: -96, 49th entry: 744, 50th entry: -528, 51th entry: 3528, 53th entry: 36, 54th entry: -12, 55th entry: 528, 57th entry: -1056, 60th entry: 24, 61th entry: -72, 67th entry: -768, 68th entry: -1440, 75th entry: -132, 77th entry: -48, 81th entry: -3576, 82th entry: -1056, 87th entry: 72, 88th entry: 108, 90th entry: -492, 91th entry: -24, 92th entry: -84, 93th entry: 1080, 96th entry: 48, 97th entry: -648, 98th entry: 1104, 101th entry: 888, 106th entry: 1896, 107th entry: 144, 108th entry: 24, 115th entry: 168, 121th entry: 1152, 122th entry: -36, 126th entry: 24, 128th entry: 1152, 129th entry: -72, 136th entry: -1104
+
+
+
+Solution written out on identity form: 
+i.e. if one adds up all the linear combination of terms presented below, the expansion of d/dt E[m(t, z(t))] is obtained.
+
+Used identity:
+
+
+-1824 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bv}\right] basis term index 5
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vj}^{2}\right] basis term index 12
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{bj}G_{vj}\right] basis term index 43
+)
+
+
+Used identity:
+
+
+-12 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}\right] basis term index 7
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{jj}\right] basis term index 11
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vj}G_{ve}G_{je}\right] basis term index 18
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{jj}G_{ee}\right] basis term index 19
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{je}^{2}\right] basis term index 20
+)
+
+
+Used identity:
+
+
+-744 * (
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{aj}G_{bj}G_{vv}\right] basis term index 35
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{aj}G_{be}G_{vv}G_{je}\right] basis term index 36
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{4}G_{vv}G_{je}^{2}\right] basis term index 39
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{ae}G_{be}G_{vv}G_{jj}\right] basis term index 40
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+)
+
+
+Used identity:
+
+
+672 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bv}\right] basis term index 5
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{bj}G_{vj}\right] basis term index 43
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{bj}\right] basis term index 44
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{aj}^{2}G_{bb}G_{bv}^{2}\right] basis term index 52
+)
+
+
+Used identity:
+
+
+1968 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{aj}G_{ae}G_{bb}G_{bv}^{2}G_{je}\right] basis term index 46
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+)
+
+
+Used identity:
+
+
+-1056 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bv}^{2}\right] basis term index 6
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{bj}\right] basis term index 54
+)
+
+
+Used identity:
+
+
+672 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{3}G_{av}G_{bv}\right] basis term index 29
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{av}G_{bj}G_{vj}\right] basis term index 32
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{aj}G_{bj}G_{vv}\right] basis term index 35
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{aj}^{2}G_{bv}^{2}\right] basis term index 53
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{bj}\right] basis term index 54
+)
+
+
+Used identity:
+
+
+-60 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{3}G_{av}G_{bv}\right] basis term index 29
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{aj}G_{bj}G_{vv}\right] basis term index 35
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{ae}G_{be}G_{vv}G_{jj}\right] basis term index 40
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{ae}G_{be}G_{vj}^{2}\right] basis term index 41
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+-6 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+)
+
+
+Used identity:
+
+
+60 * (
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}\right] basis term index 7
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{jj}\right] basis term index 11
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-3 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{aj}G_{bj}G_{vv}\right] basis term index 35
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{vv}\right] basis term index 80
+)
+
+
+Used identity:
+
+
+120 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}^{2}G_{vj}G_{je}\right] basis term index 0
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vj}G_{ve}G_{je}\right] basis term index 18
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vj}^{2}\right] basis term index 25
+-3 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+)
+
+
+Used identity:
+
+
+-72 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}\right] basis term index 7
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{jj}\right] basis term index 11
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{bj}^{2}G_{vv}\right] basis term index 13
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+)
+
+
+Used identity:
+
+
+-1488 * (
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{3}G_{av}G_{bv}\right] basis term index 29
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{av}G_{bj}G_{vj}\right] basis term index 32
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{4}G_{vj}^{2}\right] basis term index 34
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{aj}G_{bj}G_{vv}\right] basis term index 35
+)
+
+
+Used identity:
+
+
+48 * (
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bv}\right] basis term index 5
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{bj}\right] basis term index 44
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{bj}\right] basis term index 54
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bv}\right] basis term index 79
+)
+
+
+Used identity:
+
+
+24 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{jj}\right] basis term index 11
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{jj}G_{ee}\right] basis term index 19
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{be}^{2}G_{vv}G_{jj}\right] basis term index 21
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vv}G_{jj}\right] basis term index 22
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vv}G_{jj}\right] basis term index 23
+)
+
+
+Used identity:
+
+
+1872 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bv}^{2}\right] basis term index 6
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vj}^{2}\right] basis term index 12
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{av}G_{bj}G_{vj}\right] basis term index 32
+)
+
+
+Used identity:
+
+
+-48 * (
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}G_{aj}G_{bv}G_{vj}\right] basis term index 101
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{bv}G_{bj}G_{vj}\right] basis term index 102
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}G_{av}G_{bv}\right] basis term index 107
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aj}^{2}G_{bv}^{2}\right] basis term index 109
+)
+
+
+Used identity:
+
+
+-96 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{av}G_{bj}G_{vj}\right] basis term index 32
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{aj}G_{be}G_{vv}G_{je}\right] basis term index 36
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{ae}G_{be}G_{vj}^{2}\right] basis term index 41
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+)
+
+
+Used identity:
+
+
+720 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{3}G_{av}G_{bv}\right] basis term index 29
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{av}G_{bj}G_{vj}\right] basis term index 32
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{aj}G_{bj}G_{vv}\right] basis term index 35
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{aj}^{2}G_{bv}^{2}\right] basis term index 53
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{bj}\right] basis term index 54
+)
+
+
+Used identity:
+
+
+432 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{aj}G_{bj}G_{vv}\right] basis term index 35
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{aj}G_{be}G_{vv}G_{je}\right] basis term index 36
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{ae}G_{be}G_{vv}G_{jj}\right] basis term index 40
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{ae}^{2}G_{bv}^{2}G_{jj}\right] basis term index 59
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bv}G_{be}G_{jj}\right] basis term index 60
+)
+
+
+Used identity:
+
+
+-2760 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{ae}G_{be}G_{vj}^{2}\right] basis term index 41
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{bj}\right] basis term index 54
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bv}G_{be}G_{jj}\right] basis term index 60
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+)
+
+
+Used identity:
+
+
+48 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}G_{vj}\right] basis term index 73
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{vv}\right] basis term index 80
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{vv}G_{jj}\right] basis term index 84
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bj}G_{vv}\right] basis term index 86
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{aj}^{2}G_{vv}\right] basis term index 87
+)
+
+
+Used identity:
+
+
+-12 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}^{2}G_{vj}G_{je}\right] basis term index 0
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{bj}^{2}G_{vv}\right] basis term index 13
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{be}^{2}G_{vv}G_{jj}\right] basis term index 21
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{be}G_{ve}G_{jj}\right] basis term index 48
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}G_{bv}G_{be}G_{jj}\right] basis term index 49
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{be}^{2}G_{jj}\right] basis term index 50
+)
+
+
+Used identity:
+
+
+1512 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{bj}\right] basis term index 44
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{aj}G_{ae}G_{bb}G_{bv}^{2}G_{je}\right] basis term index 46
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}G_{bv}G_{be}G_{jj}\right] basis term index 49
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bv}G_{bj}^{2}G_{be}\right] basis term index 64
+)
+
+
+Used identity:
+
+
+-120 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}^{2}G_{bb}G_{bv}^{2}\right] basis term index 4
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bv}\right] basis term index 5
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bv}^{2}\right] basis term index 6
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}\right] basis term index 7
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{aa}G_{ab}^{2}G_{bb}\right] basis term index 8
+)
+
+
+Used identity:
+
+
+504 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vv}G_{jj}\right] basis term index 22
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}G_{bv}G_{be}G_{jj}\right] basis term index 49
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ae}^{2}G_{bb}G_{bv}^{2}G_{jj}\right] basis term index 58
+)
+
+
+Used identity:
+
+
+-1992 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vj}^{2}\right] basis term index 26
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{aj}G_{ae}G_{bb}G_{bv}^{2}G_{je}\right] basis term index 46
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+)
+
+
+Used identity:
+
+
+-96 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bv}^{2}\right] basis term index 6
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{bj}^{2}\right] basis term index 45
+-3 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+)
+
+
+Used identity:
+
+
+744 * (
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vj}^{2}\right] basis term index 26
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{4}G_{vj}^{2}\right] basis term index 34
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{4}G_{vv}G_{je}^{2}\right] basis term index 39
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{ae}G_{be}G_{vj}^{2}\right] basis term index 41
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+)
+
+
+Used identity:
+
+
+-528 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{be}^{2}G_{vj}^{2}\right] basis term index 24
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{aj}G_{ae}G_{bb}G_{bv}^{2}G_{je}\right] basis term index 46
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{aj}^{2}G_{bb}G_{bv}^{2}\right] basis term index 52
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ae}^{2}G_{bb}G_{bv}^{2}G_{jj}\right] basis term index 58
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+)
+
+
+Used identity:
+
+
+3528 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vj}^{2}\right] basis term index 25
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+)
+
+
+Used identity:
+
+
+36 * (
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}G_{vj}\right] basis term index 73
+)
+
+
+Used identity:
+
+
+-12 * (
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bv}\right] basis term index 79
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{vv}\right] basis term index 80
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{aa}G_{ab}^{2}\right] basis term index 81
+-3 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{2}G_{av}^{2}\right] basis term index 82
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{ab}^{2}\right] basis term index 108
+)
+
+
+Used identity:
+
+
+528 * (
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}^{2}G_{vj}G_{je}\right] basis term index 0
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{be}^{2}G_{vj}^{2}\right] basis term index 24
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{bj}G_{vj}\right] basis term index 43
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{bj}G_{be}G_{je}\right] basis term index 47
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{be}G_{ve}G_{jj}\right] basis term index 48
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+)
+
+
+Used identity:
+
+
+-1056 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{bj}G_{be}G_{je}\right] basis term index 47
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-3 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+)
+
+
+Used identity:
+
+
+24 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vv}G_{jj}\right] basis term index 22
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{be}G_{ve}G_{jj}\right] basis term index 48
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}G_{bv}G_{be}G_{jj}\right] basis term index 49
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ae}^{2}G_{bb}G_{bv}^{2}G_{jj}\right] basis term index 58
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+)
+
+
+Used identity:
+
+
+-72 * (
+-3/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}G_{vj}\right] basis term index 73
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bv}\right] basis term index 79
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{vj}\right] basis term index 83
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{vj}^{2}\right] basis term index 85
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bj}G_{vv}\right] basis term index 86
+)
+
+
+Used identity:
+
+
+-768 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bv}^{2}\right] basis term index 6
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{aj}^{2}G_{bb}G_{bv}^{2}\right] basis term index 52
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{aj}^{2}G_{bv}^{2}\right] basis term index 53
+)
+
+
+Used identity:
+
+
+-1440 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bv}G_{bj}^{2}G_{be}\right] basis term index 64
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bv}G_{bj}G_{be}\right] basis term index 67
+)
+
+
+Used identity:
+
+
+-132 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{2}G_{av}^{2}\right] basis term index 82
+-3 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{vj}\right] basis term index 83
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{aj}^{2}G_{vv}\right] basis term index 87
+)
+
+
+Used identity:
+
+
+-48 * (
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}G_{vj}\right] basis term index 73
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{vv}\right] basis term index 80
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{aa}G_{ab}^{2}\right] basis term index 81
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{vj}\right] basis term index 83
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{vv}G_{jj}\right] basis term index 84
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{vj}^{2}\right] basis term index 85
+)
+
+
+Used identity:
+
+
+-3576 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}^{2}G_{vj}G_{je}\right] basis term index 0
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vj}^{2}\right] basis term index 25
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{bj}\right] basis term index 44
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{aj}G_{ae}G_{bb}G_{bv}^{2}G_{je}\right] basis term index 46
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}G_{bv}G_{be}G_{jj}\right] basis term index 49
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+)
+
+
+Used identity:
+
+
+-1056 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{je}^{2}\right] basis term index 20
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vv}G_{jj}\right] basis term index 22
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{be}G_{ve}G_{jj}\right] basis term index 48
+)
+
+
+Used identity:
+
+
+72 * (
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bv}\right] basis term index 5
+-3 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bv}^{2}\right] basis term index 6
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}\right] basis term index 7
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{aa}G_{ab}^{2}G_{bb}\right] basis term index 8
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{3}G_{av}G_{bv}\right] basis term index 29
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{aa}G_{ab}^{2}\right] basis term index 81
+)
+
+
+Used identity:
+
+
+108 * (
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+-3 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{vj}\right] basis term index 83
+)
+
+
+Used identity:
+
+
+-492 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vv}G_{jj}\right] basis term index 23
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bv}G_{be}G_{jj}\right] basis term index 60
+)
+
+
+Used identity:
+
+
+-24 * (
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}\right] basis term index 7
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^2}  \sum_{a,b} \EX \left[G_{aa}G_{ab}^{2}G_{bb}\right] basis term index 8
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{jj}\right] basis term index 11
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vj}^{2}\right] basis term index 12
+)
+
+
+Used identity:
+
+
+-84 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}^{2}G_{bv}^{2}\right] basis term index 6
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vv}G_{jj}\right] basis term index 23
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vj}^{2}\right] basis term index 26
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+)
+
+
+Used identity:
+
+
+1080 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vv}G_{je}^{2}\right] basis term index 20
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vv}G_{jj}\right] basis term index 23
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{aj}G_{be}G_{vv}G_{je}\right] basis term index 36
+)
+
+
+Used identity:
+
+
+48 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}^{2}G_{bb}G_{bv}^{2}\right] basis term index 4
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{bj}^{2}G_{vv}\right] basis term index 13
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bb}G_{bv}G_{bj}G_{vj}\right] basis term index 43
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{bj}\right] basis term index 44
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{bj}^{2}\right] basis term index 45
+)
+
+
+Used identity:
+
+
+-648 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{aj}^{2}G_{bv}^{2}\right] basis term index 53
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{ae}^{2}G_{bv}^{2}G_{jj}\right] basis term index 59
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}^{2}G_{ae}G_{bj}^{2}G_{be}\right] basis term index 66
+)
+
+
+Used identity:
+
+
+1104 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bv}G_{bj}^{2}G_{be}\right] basis term index 64
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}^{2}G_{bj}^{2}G_{be}^{2}\right] basis term index 65
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}^{2}G_{ae}G_{bj}^{2}G_{be}\right] basis term index 66
+)
+
+
+Used identity:
+
+
+888 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{3}G_{av}G_{bj}G_{vj}\right] basis term index 32
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{aj}G_{be}G_{vv}G_{je}\right] basis term index 36
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+)
+
+
+Used identity:
+
+
+1896 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}^{2}G_{vj}G_{je}\right] basis term index 0
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{be}G_{vv}G_{je}\right] basis term index 16
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{aj}G_{ae}G_{bb}G_{bv}^{2}G_{je}\right] basis term index 46
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+)
+
+
+Used identity:
+
+
+144 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{bj}\right] basis term index 54
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bv}G_{be}G_{jj}\right] basis term index 60
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bv}G_{bj}^{2}G_{be}\right] basis term index 64
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}^{2}G_{ae}G_{bj}^{2}G_{be}\right] basis term index 66
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bv}G_{bj}G_{be}\right] basis term index 67
+)
+
+
+Used identity:
+
+
+24 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{bj}^{2}G_{vv}\right] basis term index 15
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vv}G_{jj}\right] basis term index 23
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bv}^{2}G_{be}^{2}G_{jj}\right] basis term index 50
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-3 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+)
+
+
+Used identity:
+
+
+168 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}G_{vj}\right] basis term index 73
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}^{2}G_{av}^{2}\right] basis term index 82
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{vj}\right] basis term index 83
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}^{2}G_{vj}^{2}\right] basis term index 85
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{aj}^{2}G_{vv}\right] basis term index 87
+)
+
+
+Used identity:
+
+
+1152 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bv}\right] basis term index 5
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bj}G_{vj}\right] basis term index 9
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{bj}\right] basis term index 44
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{aj}^{2}G_{bb}G_{bv}^{2}\right] basis term index 52
+)
+
+
+Used identity:
+
+
+-36 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{bv}\right] basis term index 5
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bb}G_{bj}G_{vv}\right] basis term index 14
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vv}G_{jj}\right] basis term index 22
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bb}G_{be}G_{vj}^{2}\right] basis term index 25
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+-4 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bb}G_{bv}G_{je}\right] basis term index 63
+)
+
+
+Used identity:
+
+
+24 * (
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}G_{vj}\right] basis term index 73
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{aa}G_{ab}G_{av}G_{bv}\right] basis term index 79
+-5 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{vj}\right] basis term index 83
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bj}G_{vv}\right] basis term index 86
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^3}  \sum_{a,b,v} \EX \left[G_{ab}G_{av}G_{bv}\right] basis term index 107
+)
+
+
+Used identity:
+
+
+1152 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{bj}\right] basis term index 54
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bv}^{2}G_{je}\right] basis term index 56
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bv}G_{be}G_{jj}\right] basis term index 60
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bv}G_{be}G_{je}\right] basis term index 61
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}^{2}G_{ae}G_{bj}^{2}G_{be}\right] basis term index 66
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}G_{aj}G_{ae}G_{bv}G_{bj}G_{be}\right] basis term index 67
+)
+
+
+Used identity:
+
+
+-72 * (
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{ab}^{2}G_{av}G_{aj}G_{bb}G_{vj}\right] basis term index 10
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{aj}G_{ae}G_{bb}G_{vv}G_{je}\right] basis term index 17
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{bb}G_{vj}G_{ve}G_{je}\right] basis term index 18
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}^{2}G_{be}^{2}G_{vj}^{2}\right] basis term index 26
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{av}G_{bb}G_{be}G_{vj}G_{je}\right] basis term index 27
+-5/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{2}G_{av}G_{ae}G_{bb}G_{vj}G_{je}\right] basis term index 28
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}^{3}G_{av}G_{be}G_{vj}G_{je}\right] basis term index 42
+)
+
+
+Used identity:
+
+
+-1104 * (
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{aj}G_{ae}G_{bb}G_{bv}^{2}G_{je}\right] basis term index 46
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^4}  \sum_{a,b,v,j} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{bj}\right] basis term index 51
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{aj}G_{bv}^{2}G_{be}G_{je}\right] basis term index 55
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{ab}G_{ae}G_{bv}^{2}G_{be}G_{jj}\right] basis term index 57
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{aj}G_{bb}G_{bv}G_{be}G_{je}\right] basis term index 62
+-2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bv}G_{bj}^{2}G_{be}\right] basis term index 64
+-1/2 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}^{2}G_{bj}^{2}G_{be}^{2}\right] basis term index 65
+-1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{ab}G_{av}^{2}G_{ae}G_{bj}^{2}G_{be}\right] basis term index 66
+)
