@@ -1,5 +1,5 @@
 # quantitative_convergence_sparse
-Repository containing supplementary material for the coming article "Quantitive Tracy-Widom laws for sparse random matrices". 
+Repository containing supplementary material for the paper "Quantitive Tracy-Widom laws for sparse random matrices" available at https://arxiv.org/abs/2507.19340. 
 
 ## Explanation of files
 
