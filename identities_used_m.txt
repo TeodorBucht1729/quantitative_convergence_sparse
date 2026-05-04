@@ -14,8 +14,7 @@ Expansion of d/dt E[m(t, z(t))]:
 
 
 
-Basis terms (Denoted \Tau_b in the article):
-
+Basis terms times \kappa_4 (Denoted \Tau^{basis} in the article):
 
 1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}G_{av}G_{ae}G_{bb}^{2}G_{vj}G_{je}\right] basis term index 0
 1 \kappa_4 e^{-t}(1 - e^{-t}) \frac{N}{q^2N^5}  \sum_{a,b,v,j,e} \EX \left[G_{aa}^{2}G_{bb}^{2}G_{vv}G_{je}^{2}\right] basis term index 1
@@ -130,7 +129,7 @@ Basis terms (Denoted \Tau_b in the article):
 
 
 
-Coefficient matrix (denoted (\widetilde{c}_{T \beta})_{T \in \Tau_g, 1 \leq \beta \leq M} in the article):
+Coefficient matrix (denoted (c_{lm})_{1 \leq l \leq L, 1 \leq m \leq M} in the article):
 Coefficient matrix is of dimension 110 x 138
 
 
@@ -273,14 +272,15 @@ Coefficient matrix is of dimension 110 x 138
 137th column of coefficient matrix: 69th entry: -1, 88th entry: -1, 89th entry: -2, 92th entry: -1/2, 94th entry: -1/2, 96th entry: -1
 138th column of coefficient matrix: 80th entry: -1, 81th entry: -1, 82th entry: -1, 83th entry: -1
 
-Rhs of linear equation system (denoted (b_T)_{T \in \Tau_b} in the article): 5th entry: 12, 6th entry: 36, 7th entry: 36, 30th entry: 12, 102th entry: 72, 103th entry: 48, 108th entry: 24, 109th entry: 12, 110th entry: 24
+Rhs of linear equation system (denoted (b_l)_{l=1}^L in the article): 5th entry: 12, 6th entry: 36, 7th entry: 36, 30th entry: 12, 102th entry: 72, 103th entry: 48, 108th entry: 24, 109th entry: 12, 110th entry: 24
 
-Solution to linear equation system (denoted (x_\beta)_{1 \leq \beta \leq M} in the article): 3th entry: -1824, 4th entry: -12, 9th entry: -744, 12th entry: 672, 15th entry: 1968, 16th entry: -1056, 18th entry: 672, 19th entry: -60, 21th entry: 60, 22th entry: 120, 26th entry: -72, 27th entry: -1488, 29th entry: 48, 31th entry: 24, 34th entry: 1872, 35th entry: -48, 36th entry: -96, 37th entry: 720, 39th entry: 432, 40th entry: -2760, 41th entry: 48, 42th entry: -12, 43th entry: 1512, 44th entry: -120, 46th entry: 504, 47th entry: -1992, 48th entry: -96, 49th entry: 744, 50th entry: -528, 51th entry: 3528, 53th entry: 36, 54th entry: -12, 55th entry: 528, 57th entry: -1056, 60th entry: 24, 61th entry: -72, 67th entry: -768, 68th entry: -1440, 75th entry: -132, 77th entry: -48, 81th entry: -3576, 82th entry: -1056, 87th entry: 72, 88th entry: 108, 90th entry: -492, 91th entry: -24, 92th entry: -84, 93th entry: 1080, 96th entry: 48, 97th entry: -648, 98th entry: 1104, 101th entry: 888, 106th entry: 1896, 107th entry: 144, 108th entry: 24, 115th entry: 168, 121th entry: 1152, 122th entry: -36, 126th entry: 24, 128th entry: 1152, 129th entry: -72, 136th entry: -1104
+Solution to linear equation system (denoted (x_m)_{m = 1}^M in the article): 3th entry: -1824, 4th entry: -12, 9th entry: -744, 12th entry: 672, 15th entry: 1968, 16th entry: -1056, 18th entry: 672, 19th entry: -60, 21th entry: 60, 22th entry: 120, 26th entry: -72, 27th entry: -1488, 29th entry: 48, 31th entry: 24, 34th entry: 1872, 35th entry: -48, 36th entry: -96, 37th entry: 720, 39th entry: 432, 40th entry: -2760, 41th entry: 48, 42th entry: -12, 43th entry: 1512, 44th entry: -120, 46th entry: 504, 47th entry: -1992, 48th entry: -96, 49th entry: 744, 50th entry: -528, 51th entry: 3528, 53th entry: 36, 54th entry: -12, 55th entry: 528, 57th entry: -1056, 60th entry: 24, 61th entry: -72, 67th entry: -768, 68th entry: -1440, 75th entry: -132, 77th entry: -48, 81th entry: -3576, 82th entry: -1056, 87th entry: 72, 88th entry: 108, 90th entry: -492, 91th entry: -24, 92th entry: -84, 93th entry: 1080, 96th entry: 48, 97th entry: -648, 98th entry: 1104, 101th entry: 888, 106th entry: 1896, 107th entry: 144, 108th entry: 24, 115th entry: 168, 121th entry: 1152, 122th entry: -36, 126th entry: 24, 128th entry: 1152, 129th entry: -72, 136th entry: -1104
 
 
 
 Solution written out on identity form: 
 i.e. if one adds up all the linear combination of terms presented below, the expansion of d/dt E[m(t, z(t))] is obtained.
+The below is the right hand side of (5.25) from the article written out in full. 
 
 Used identity:
 

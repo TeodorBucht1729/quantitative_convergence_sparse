@@ -116,7 +116,7 @@ class CumulantPoly:
             if self.poly[term] == 0:
                 continue
             if term == ((0,0), (4,1), (exp_variable_index, 1)):
-                cumulant_string = "e^{-t}(1 - e^{-t})"
+                cumulant_string = "e^{-t}(1 - e^{-t}) \\kappa_4"
             else:
                 cumulant_string = ''.join([f"\kappa_{ind}^{p}" if ind != 0 else '1' for (ind, p) in term])
             terms.append(f"{Fraction(self.poly[term])} {cumulant_string}")
@@ -126,10 +126,11 @@ class CumulantPoly:
 
 class TermCollection:
     """
-    Represents a sum of standard terms of the form N^(N_deg)/(N^(#I) q^(q_deg)) sum_(I) cumulant_poly E[prod G_(x_iy_i)].
-    The terms are saved in the dict self.terms, the keys are of the form (q_deg, N_deg, index_graph),
-    an example key is (2, 1, (((0, 2), 2), ((1, 1), 2), ((2, 2), 1))), which represents the term
-    N/q^2 sum_(v,a,b) E[G_vb^2 G_aa^2 G_bb]. The values in self.terms are Term-objects.
+    Represents a sum of standard terms of the form 
+    N^(N_deg)/(N^(#I) q^(q_deg)) sum_(I) cumulant_poly E[F^(i_0)(X(t)) prod_{i=1}^{i_0} ΔIm prod_{l=1}^{n_i} G_(x_l^{(i)} y_l^{(i)})].
+    The terms are saved in the dict self.terms, the keys are of the form (q_deg, N_deg, F_derivative, tuple_of_prods, h_list),
+    an example key is (2, 1, 1, ((((0, 2), 2), ((1, 1), 2), ((2, 2), 1)),), ()), which represents the term
+    N/q^2 sum_(a,b,c) E[F'(X(t)) ΔIm G_ac^2 G_bb^2 G_cc]. The values in self.terms are Term-objects.
     """
 
     def __init__(self): 
@@ -197,7 +198,8 @@ class TermCollection:
 
     def group_equivalent(self, use_pre_saved_permutation_groups = True):
         """ 
-        Join terms that are equivalent up to permutation of indices
+        Join terms that are equivalent up to permutation of indices, this is not described in the article as it is not needed for the proof,
+        but it makes intermediate results more easy to view.  
         """
         global permutation_groups_global
 
@@ -478,7 +480,8 @@ def add_to_dict(dic, key, val):
 
 class Term:
     """
-    Represents a term of the form N^(N_deg)/(N^(#I) q^(q_deg)) sum_(I) cumulant_poly E[F^(alpha) prod Delta Im prod G_(x_iy_i)].
+    Represents a term of the form 
+    N^(N_deg)/(N^(#I) q^(q_deg)) sum_(I) cumulant_poly E[F^(i_0)(X(t)) prod_{i=1}^{i_0} ΔIm prod_{l=1}^{n_i} G_(x_l^{(i)} y_l^{(i)})]
     """
 
     def __init__(self, F_derivate: int, prod_dict: list[dict[tuple, int]], q_deg: int, N_deg: int, coeff: CumulantPoly):
@@ -919,6 +922,44 @@ def two_terms_equivalent(term_a: Term, term_b: Term) -> bool:
     
     return search_permutations(term_a, term_b, 0, [False for _ in range(term_a.get_nbr_vars())], [-1 for _ in range(term_a.get_nbr_vars())])
 
+class Ab_term_container:
+
+    def __init__(self):
+        self.storage_dict = {}
+        self.next_term_ind = 0
+        self.term_to_ind = {}
+        self.basis_terms = []
+
+    def contains(self, term: Term) -> bool:
+        if term.get_key() in self.term_to_ind:
+            return True
+        almost_uid = produce_almost_unique_identifier(term)
+        if almost_uid in self.storage_dict:
+            for stored_term in self.storage_dict[almost_uid]:
+                if two_terms_equivalent(stored_term, term):
+                    return True
+        return False
+    
+    def store_and_get_term_ind(self, term: Term) -> int:
+        term_key = term.get_key()
+        if term_key in self.term_to_ind:
+            return self.term_to_ind[term_key]
+        almost_uid = produce_almost_unique_identifier(term)
+        if almost_uid in self.storage_dict:
+            for stored_term in self.storage_dict[almost_uid]:
+                if two_terms_equivalent(stored_term, term):
+                    self.term_to_ind[term_key] = self.term_to_ind[stored_term.get_key()] 
+                    return self.term_to_ind[term_key]
+        # at this point we know that term is not contained in our ab_term_container
+        self.term_to_ind[term_key] = self.next_term_ind
+        self.next_term_ind += 1
+        if almost_uid not in self.storage_dict:
+            self.storage_dict[almost_uid] = []
+        term_copy = copy.deepcopy(term)
+        self.storage_dict[almost_uid].append(term_copy)
+        self.basis_terms.append(term_copy)
+        return self.term_to_ind[term_key]
+        
 
 def generate_term_obj_from_key(term_key):
     q_deg = term_key[0]
@@ -989,18 +1030,18 @@ def list_contains_eq_term(a: list, term: Term):
     return False
 
 
-def save_object(identities: list[TermCollection | Term], save_name):
+def save_object(obj: list[TermCollection | Term] | Ab_term_container, save_name):
     dir_path = os.path.dirname(os.path.realpath(__file__))
     with open(os.path.join(dir_path, f"{save_name}.pickle"), "wb") as f:
-        pickle.dump(identities, f)
+        pickle.dump(obj, f)
 
-def load_object(save_name) -> list[TermCollection | Term]:
+def load_object(save_name) -> list[TermCollection | Term] | Ab_term_container:
     dir_path = os.path.dirname(os.path.realpath(__file__))
     if f"{save_name}.pickle" in os.listdir(dir_path):
         print("Loading", os.path.join(dir_path, f"{save_name}.pickle"))
         with open(os.path.join(dir_path, f"{save_name}.pickle"), "rb") as f:
-            identities = pickle.load(f)
-    return identities
+            obj = pickle.load(f)
+    return obj
 
 
 def sanity_check_identities(identities: list[TermCollection]):
@@ -1065,7 +1106,6 @@ def main():
     term_collection.filter_and_group_equivalent(total_degree_limit, q_degree_filter, degree_filter)
     print(f"\n\nTerms before manipulating them: ({len(term_collection.terms)} unique terms)\n\n")
     term_collection.print_terms_in_order(print_keys=False)
-    
     # compute the identities as described in the article
     if not identities_precomputed:
         identities_la = generate_all_ab_identities(5, 8, total_degree_limit, q_degree_filter, degree_filter, print_out=False)
@@ -1202,44 +1242,7 @@ def generate_all_ab_identities(max_nbr_indices, max_F_derivatives, total_degree_
     return identities_la
 
 
-class Ab_term_container:
 
-    def __init__(self):
-        self.storage_dict = {}
-        self.next_term_ind = 0
-        self.term_to_ind = {}
-        self.basis_terms = []
-
-    def contains(self, term: Term) -> bool:
-        if term.get_key() in self.term_to_ind:
-            return True
-        almost_uid = produce_almost_unique_identifier(term)
-        if almost_uid in self.storage_dict:
-            for stored_term in self.storage_dict[almost_uid]:
-                if two_terms_equivalent(stored_term, term):
-                    return True
-        return False
-    
-    def store_and_get_term_ind(self, term: Term) -> int:
-        term_key = term.get_key()
-        if term_key in self.term_to_ind:
-            return self.term_to_ind[term_key]
-        almost_uid = produce_almost_unique_identifier(term)
-        if almost_uid in self.storage_dict:
-            for stored_term in self.storage_dict[almost_uid]:
-                if two_terms_equivalent(stored_term, term):
-                    self.term_to_ind[term_key] = self.term_to_ind[stored_term.get_key()] 
-                    return self.term_to_ind[term_key]
-        # at this point we know that term is not contained in our ab_term_container
-        self.term_to_ind[term_key] = self.next_term_ind
-        self.next_term_ind += 1
-        if almost_uid not in self.storage_dict:
-            self.storage_dict[almost_uid] = []
-        term_copy = copy.deepcopy(term)
-        self.storage_dict[almost_uid].append(term_copy)
-        self.basis_terms.append(term_copy)
-        return self.term_to_ind[term_key]
-        
             
 def pick_out_basis_terms(term_collection, identities_la):
     print("Picking out basis terms")
@@ -1372,7 +1375,7 @@ def build_span_matrix_and_save_it(term_collection: TermCollection, precomputed_i
     # print("Term collection:")
     # term_collection.print_terms_in_order()
     
-    print("Rhs of linear equation (denoted (b_T)_{T \in \Tau_b} in the article):")
+    print("Rhs of linear equation (denoted (b_l)_{l=1}^{L} in the article):")
     non_zero_elements = sorted(non_zero_elements, key=lambda x: x[0])
     non_zero_elements = [f"{x[0]}th entry: {str(x[1])}" for x in non_zero_elements]
     print(f"d/dt E[F(X(t))] on vector form: {', '.join(non_zero_elements)}")
